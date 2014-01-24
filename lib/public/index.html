@@ -1,0 +1,20 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+  <link rel="stylesheet" href="app.css" type="text/css" media="screen" charset="utf-8" />
+  </head>
+  <body>
+    <div class="dashboard" ng-controller="DashBoardController">
+      <ul class="items">
+        <li class="item" ng-repeat="item in items" ng-controller="ItemController">
+          <span class="item-name">{{item.name}}</span>
+          <span class="item-value">{{item.value}}</span>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
+

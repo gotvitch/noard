@@ -1,0 +1,19 @@
+
+html{ font: 13px/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif; }
+
+.dashboard{ width: 600px; margin: 0 auto;}
+
+.items{ list-style: none; padding: 0; }
+.item{ clear: both; font-size: 40px; }
+.item-name{
+    float: left;
+    width: 400px;
+    
+    text-transform: uppercase;
+    color: #999;
+}
+.item-value{
+    float: left;
+    width: 200px;
+    color: #333;
+}
